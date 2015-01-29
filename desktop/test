@@ -1,0 +1,7 @@
+test
+rails g scaffold Post title:string description:text
+rake db:migrate
+rails g bootstrap:themed Posts
+
+https://github.com/seyhunak/twitter-bootstrap-rails
+ rails g scaffold Category name:string description:text user_id:integer

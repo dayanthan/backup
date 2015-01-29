@@ -1,0 +1,197 @@
+s
+rails g scaffold User user_name:string user_email:string password:string user_type:boolean 
+
+avatar	
+      t.attachment :avatar
+
+rails g scaffold Profile address:string city:string state:string country:string mobile:integer avatar:attachment date_of_birth:string user_id:integer
+
+rails g scaffold Item name:string discription:string price:integer discount:integer category_id:integer user_id:integer available:integer
+
+rails g scaffold UserCredit user_id:integer item_id:integer credit:integer
+
+
+
+rake db:migrate
+rails g bootstrap:themed UserCredits
+
+Adding the profile and categories modules. 
+To make that association for rails demo task.
+
+
+rails generate paperclip User avatar 
+
+rake db:migrate
+
+
+
+rake db:migrate:down VERSION=20150127180141
+
+rake db:migrate VERSION=20150122173611
+rake db:migrate:down VERSION=20150129110445
+rake db:migrate:up VERSION=20150122173611
+
+
+rvm
+php16@php16-Lenovo-B50-70:~/Greference/mytestapp$ rvm gemset list
+
+gemsets for ruby-2.1.5 (found in /home/php16/.rvm/gems/ruby-2.1.5)
+=> (default)
+   global
+   railsfour
+
+php16@php16-Lenovo-B50-70:~/Greference/mytestapp$ rvm gemset use railsfour
+
+RVM is not a function, selecting rubies with 'rvm use ...' will not work.
+
+You need to change your terminal emulator preferences to allow login shell.
+Sometimes it is required to use `/bin/bash --login` as the command.
+Please visit https://rvm.io/integration/gnome-terminal/ for an example.
+
+php16@php16-Lenovo-B50-70:~/Greference/mytestapp$ source ~/.rvm/scripts/rvm
+php16@php16-Lenovo-B50-70:~/Greference/mytestapp$ rvm gemset use railsfour
+Using ruby-2.1.5 with gemset railsfour
+
+
+AngellistApi.configure do |config|
+     config.access_token = '<949694aface8d359ed9ca936e75f6a717e85d6c33c1252ba>'
+   end
+
+
+https://api.angel.co/1/search?query	=chicago&tag_type=LocationTag&MarketTag=E-commerce&type=Startup
+
+
+type tag_type query in AngellistApi
+
+Register an OAuth Client Application
+
+Application Name
+Callback URL
+Main URL
+
+
+Redirect URI http:localhost:3000
+Main URI http:localhost:3000
+Client ID 25ff24bc1415cd73be3a137c8627b535d2ee0c786a7ad340
+Your Token 860f6348d2f70c09e8c2f8e91ac548c384b2935a8d4937ba
+
+http://en.wikipedia.org/wiki/Outline_of_vehicles
+vehilcs
+
+veg
+http://en.wikipedia.org/wiki/List_of_vegetables
+
+
+21-jan
+To Adding the profile and categories modules.
+To make that association for rails demo task. 
+
+
+22-jan
+ To add bootstrap-datepicker for the submit forms and add Ajax pagination for user, profile and category pages. 
+
+23 jan
+To add bootstrap-datepicker for the submit forms and add Ajax pagination for user,
+ profile and category pages in demo apllication 
+
+24 jan
+ Created products module based on the category association. Add the category related filter and Ajax pagination with twitter bootstrap style to the rails demo application.
+
+
+26 jan
+To checked paypal express checkout integration using activemerchant in rails 4.
+
+28 jan
+Add the payment process in rails demo application using activemerchant and authorize.net
+
+
+
+
+
+API Login ID:	3JZ6wbB93a9h
+
+Transaction Key
+Your Transaction Key has been successfully created.
+
+Current Transaction Key:	9e3ybUeHm39K52Re
+
+
+
+ http://community.developer.authorize.net/t5/Integration-and-Testing/Sandbox-Password-Reset-Secret-Question-Pet-Name/td-p/31840
+
+ http://community.developer.authorize.net/t5/The-Authorize-Net-Developer-Blog/Authorize-Net-Sandbox-FAQs/ba-p/17440
+
+daya.nauk
+ apilogin== 23nAN8mg8g
+ Current Transaction Key:	849sfHvAj762AL6e
+
+
+
+
+
+
+
+
+rails g scaffold order new cart_id:integer ip_address:string first_name:string last_name:string card_type:string card_expires_on:date
+
+rails g model order_transaction order_id:integer action:string amount:integer success:boolean authorization:string message:string params:text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"#<ActiveMerchant::Billing::CreditCard:0x000000055086d8 @brand=\"visa\", @number=\"4111111111111111\", @verification_value=\"000\", @year=2015, @month=1, @first_name=\"remo\", @last_name=\"pandian\">"
+"00000000"
+/home/php16/.rvm/gems/ruby-2.1.5@railsfour/gems/activemerchant-1.46.0/lib/active_merchant/billing/compatibility.rb:6:in `valid?': Implicit inclusion of Rails-specific functionality is deprecated. Explicitly require "active_merchant/billing/rails" if you need it.
+"----------"
+"#<ActiveMerchant::Billing::Response:0x000000054af830 @params={\"action\"=>\"AUTH_ONLY\", \"response_code\"=>1, \"response_reason_code\"=>\"1\", \"response_reason_text\"=>\"This transaction has been approved\", \"avs_result_code\"=>\"Y\", \"transaction_id\"=>\"2227669896\", \"card_code\"=>\"P\", \"authorization_code\"=>\"2KIZOG\", \"cardholder_authentication_code\"=>\"2\", \"account_number\"=>\"1111\"}, @message=\"This transaction has been approved\", @success=true, @test=true, @authorization=\"2227669896#1111\", @fraud_review=false, @error_code=nil, @avs_result={\"code\"=>\"Y\", \"message\"=>\"Street address and 5-digit postal code match.\", \"street_match\"=>\"Y\", \"postal_match\"=>\"Y\"}, @cvv_result={\"code\"=>\"P\", \"message\"=>\"CVV not processed\"}>"
+"***********"
+"1111111111"
+Completed 500 Internal Server Error in 5398ms
+
+ActionView::MissingTemplate (Missing template items/purchase_option, application/purchase_option with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/php16/Greference/mytestapp/app/views"
+  * "/home/php16/.rvm/gems/ruby-2.1.5@railsfour/gems/twitter-bootstrap-rails-2.2.8/app/views"
+):
+
+
+
+30 yr
+
+
+15 laks
+
+13,000 emi
+
+
+
+landing
+70% bank side
+
+30% our side
+
+need to complete basement for apply home loan
+
+then proceed home load
+
+they will plan to give 80%
+
+
+8 land
+
+70 %
+
+sekar
+8015541801
